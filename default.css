@@ -1,18 +1,18 @@
 :root {
-	--mainColor:#eaeaea;
+	--mainColor:#EAEBED;
 	--secondaryColor:#fff;
 
 	--borderColor:#c1c1c1;
 
 	--mainText:black;
 	--secondaryText:#4b5156;
-	
+
 	--themeDotBorder: #24292e;
-	
+
 	--previewBg:rgb(251, 249, 243, 0.8);
 	--previewShadow:#f0ead6;
-	
-	--buttonColor:black; 
+
+	--buttonColor:black;
 }
 
 
@@ -24,7 +24,7 @@ html, body{
 
 body *{
 	transition: 0.3s;
-	transition-property: opacity;
+	transition: all 0.4s ease-in-out;
 }
 
 
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, strong{
 	color: var(--mainText);
 	font-family: 'Russo One', sans-serif;
 	font-weight: 400;
-	font-style: oblique;
+
 }
 
 p, li, span, label, input, textarea{
@@ -45,7 +45,7 @@ a{
 	color: #17a2b8;
 }
 ul{
-	list-style: none; 
+	list-style: none;
 }
 
 h1 { font-size: 56px;}
@@ -55,17 +55,29 @@ h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
 
+em{
+	font-style: normal;
+	font-size: 1.0rem;
+	color: #12ADC1;
+}
+span{
+	color: #2E424D;
+}
+
 .s1{
 	background-color: var(--mainColor);
+	box-sizing: border-box;
 	border-bottom: 1px solid var(--borderColor);
-	overflow: auto; 
+	overflow: auto;
+
 }
 
 .s2{
 	background-color: var(--secondaryColor);
 	border-bottom: 1px solid var(--borderColor);
-	overflow: auto; 
+	overflow: auto;
 }
+
 
 .main-container{
 	width: 1200px;
@@ -86,7 +98,7 @@ h6 { font-size: 16px;}
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	
+
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	/*grid-template-rows: 3em 20em;*/
@@ -115,7 +127,7 @@ h6 { font-size: 16px;}
 #navigation li{
 	display: inline-block;
 	margin-right: 5px;
-	margin-left:5px; 
+	margin-left:5px;
 }
 
 .dots-wrapper{
@@ -165,12 +177,13 @@ h6 { font-size: 16px;}
 	height: 200px;
 	width: 200px;
 	object-fit: cover;
-	border: 2px solid var(--borderColor);  
+	border: 2px solid var(--borderColor);
+  border-radius: 15px;
 }
 
 #theme-options-wrapper{
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
 }
 
 .theme-dot{
@@ -192,23 +205,23 @@ h6 { font-size: 16px;}
 }
 
 #light-mode{
-	background-color:#ffffff; 
+	background-color:#ffffff;
 }
 
 #dark-mode{
-	background-color:#0d0d0d; 
+	background-color:#0d0d0d;
 }
 
 #green-mode{
-	background-color:#606B56; 
+	background-color:#606B56;
 }
 
 #purple-mode{
-	background-color:#ac00e6; 
+	background-color:#ac00e6;
 }
 
 #settings-note{
-	font-size: 12px;
+	font-size: 1.0rem;
 	font-style: italic;
 	text-align: center;
 }
@@ -243,7 +256,7 @@ h6 { font-size: 16px;}
 	border-radius: 50%;
 	border:1.5px solid #ac00e6;
 	background-color:#ffffff;
-	position: absolute; 
+	position: absolute;
 }
 
 #corner-tl{
@@ -275,15 +288,17 @@ h6 { font-size: 16px;}
 }
 
 .about-me{
-	font-style: italic;
+	font-style: normal;
+	font-size: 1.1rem;
 }
 
 #skills{
 	display: flex;
 	justify-content: space-evenly;
-	background-color: var(--previewShadow);
-	font-size: 12px;
-	font-style: italic;
+	background-image: linear-gradient(#FDE7EA, #FDEFDA);
+	font-size: 1.0rem;
+	font-style: oblique;
+  border-radius: 10px;
 }
 
 .Social-links{
@@ -294,6 +309,8 @@ h6 { font-size: 16px;}
 
 #social-img{
 	width: 100%;
+	object-fit: cover;
+  border-radius: 15px;
 }
 
 .post-wrapper{
@@ -309,10 +326,13 @@ h6 { font-size: 16px;}
 	width: 100%;
 	height: 180px;
 	object-fit: cover;
+
+
 }
 
 .post{
 	border:1px solid var(--borderColor);
+	object-fit: cover;
 	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -324,14 +344,14 @@ h6 { font-size: 16px;}
 }
 
 .post-title{
-	color: black;
+	color: #141E61;
 	margin: 0;
 }
 
 .post-intro{
-	color: #4b5156;
-	font-size: 14px;
-	font-style: italic;
+	color: #1C0C5B;
+	font-size: 1.0rem;
+	font-style: normal;
 }
 
 #contact-form{
@@ -342,7 +362,7 @@ h6 { font-size: 16px;}
 	padding: 15px;
 	border-radius: 5px;
 	background-color: var(--mainColor);
-	margin-bottom: 50px; 
+	margin-bottom: 50px;
 }
 
 #contact-form label{
@@ -352,7 +372,7 @@ h6 { font-size: 16px;}
 
 #contact-form textarea{
 	min-height: 100px;
-	font-size: 14px;
+	font-size: 1.1rem;
 }
 
 .input-field{
@@ -362,14 +382,14 @@ h6 { font-size: 16px;}
 	background-color: var(--secondaryColor);
 	border-radius: 5px;
 	border:1px solid var(--borderColor);
-	font-size: 14px;
+	font-size: 1.1rem;
 }
 
 #submit-btn{
 	margin-top: 10px;
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom:10px; 
+	padding-bottom:10px;
 	color: #ffffff;
 	background-color: var(--buttonColor);
 	border:none;
@@ -378,7 +398,11 @@ h6 { font-size: 16px;}
 }
 
 #submit-btn:hover{
-	background-color: rgb(214, 226, 236); 
+	background-color: rgb(214, 226, 236);
+}
+.img-container{
+	object-fit: cover;
+	border-radius: 15px;
 }
 
 #status{
@@ -419,7 +443,7 @@ h6 { font-size: 16px;}
 
 @media screen and (max-width: 1200px){
 	.main-container{
-		width: 95%; 
+		width: 95%;
 	}
 }
 
