@@ -39,6 +39,12 @@ p, li, span, label, input, textarea{
 	color: var(--secondaryText);
 	font-family: 'Roboto Mono', monospace;
 }
+p{
+	font-size: 1.0rem;
+	text-indent: 0.8em;
+	text-align: justify;
+
+}
 
 a{
 	text-decoration: none;
@@ -75,6 +81,27 @@ span{
 .s2{
 	background-color: var(--secondaryColor);
 	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
+}
+
+.A1{
+	background-color: #EAEBED;
+	box-sizing: border-box;
+	border-bottom: 3px solid var(--borderColor);
+	overflow: auto;
+}
+
+.A2{
+  background-color: #EAEBED;
+	box-sizing: border-box;
+	border-bottom: 3px solid var(--borderColor);
+	overflow: auto;
+}
+
+.A3{
+	background-color: #EAEBED;
+	box-sizing: border-box;
+	border-bottom: 3px solid var(--borderColor);
 	overflow: auto;
 }
 
