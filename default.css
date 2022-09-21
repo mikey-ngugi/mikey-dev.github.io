@@ -231,7 +231,7 @@ span{
 	display: grid;
 	align-content: center;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 60px;
 }
 
 #preview-shadow{
@@ -244,9 +244,11 @@ span{
 
 #preview{
 	width: 300px;
+	height: 190px;
 	border:1.5px solid #17a2b8;
 	background-color: var(--previewBg);
 	padding:15px;
+	border-radius:5px;
 	position: relative;
 }
 
